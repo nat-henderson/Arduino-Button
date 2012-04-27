@@ -1,0 +1,11 @@
+This project is designed to allow me to push a button connected to an arduino and have something happen on my computer.  I'm not terribly interested in what happens right now, but something ought to.
+
+At present, it works!  On Windows only, but that's something.  Currently in development is a Linux version.  The arduino code is simplicity itself; wait for a button-press then send "input received" over a 9600-baud serial connection.  The Windows code is also fairly easy; wait for "input received" over a 9600-baud serial connection, then run the do_stuff() method.
+
+The current sample do_stuff() method pops up a messagebox.
+
+Improvements to be made:
+	Windows threading; listen while do_stuff() is running.
+	Linux support:  figure out serial connections
+	Makefiles:  make it less hideous to recompile this.
+	More interesting do_stuff() methods:  later.
