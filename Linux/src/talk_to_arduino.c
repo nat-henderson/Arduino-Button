@@ -8,7 +8,7 @@
 int main()
 {
   int i, n,
-      cport_nr=2,        /* /dev/ttyS2 (COM3 on windows) */
+      cport_nr=16,        /* /dev/ttyS2 (COM3 on windows) */
       bdrate=9600;       /* 9600 baud */
 
   char buf[4096];
